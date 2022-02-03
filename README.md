@@ -3,6 +3,6 @@
 ## Mockups HTML, CSS y Bootstrap.
 
 
-![1](img-1.png)
+![1](img1.png)
 
 ------------------------
