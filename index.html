@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <title>KYC</title>
+</head>
+
+<body class="d-flex p-2">
+
+    <main class="
+    container 
+    bg-warning 
+    border 
+    border-warning 
+    pb-3
+    rounded" style="--bs-bg-opacity: .1;">
+
+        <div class="row">
+
+            <h4 class="
+            bg-secondary 
+            mb-4
+            rounded-top 
+            text-center 
+            text-white" style="--bs-bg-opacity: .8;">PERFIL PERSONAL / KYC</h1>
+
+        </div>
+
+        <!-- FORMULARIO GENERAL -->
+        <form action="" method="post" class="
+            bg-white 
+            border 
+            border-warning 
+            rounded
+            px-lg-5 
+            px-2 
+            py-2">
+
+            <!-- SECCIÓN 1 -->
+            <section class=" 
+            d-flex 
+            flex-lg-row 
+            flex-column
+            text-center">
+
+                <div class="flex-grow-1">
+
+                    <h6 class="
+                    fs-5 
+                    line-bt 
+                    mb-0
+                    pb-3
+                    padding-start-lg-6
+                    pt-1">INFORMACIÓN KYC DE (NOMBRE CLIENTE)</h6>
+
+                    <div class="
+                    d-flex 
+                    flex-grow-1 
+                    flex-row 
+                    flex-wrap 
+                    gap-2
+                    justify-content-around 
+                    line-bt 
+                    py-3">
+
+                        <span class="fw-bold">ENVIADO POR</br>(ID USUARIO)</span>
+
+                        <span class="fw-bold">ENVIADO EL</br>(FECHA DE RECIBIDO)</span>
+
+                        <span class="fw-bold">COMPROBADO POR</br>(NOMBRE ADMIN)</span>
+                    </div>
+
+                </div>
+
+                <div class="
+                    d-flex 
+                    flex-wrap 
+                    flex-lg-column 
+                    flex-row 
+                    gap-1 
+                    justify-content-lg-end 
+                    justify-content-center 
+                    mx-2 
+                    py-1 
+                    py-lg-0">
+
+                    <button class="
+                    btn 
+                    btn-info 
+                    btn-sm 
+                    py-lg-0 
+                    px-lg-3 
+                    p-1 
+                    text-white">PROGRESO</button>
+
+                    <button class="
+                    btn 
+                    btn-sm 
+                    btn-success 
+                    py-lg-0 
+                    p-1
+                    px-lg-3" type="submit">APROBADO</button>
+
+                    <button class="
+                    btn 
+                    btn-danger 
+                    btn-sm 
+                    py-lg-0
+                    p-1 
+                    px-lg-3 
+                    ">RECHAZADO</button>
+
+                </div>
+
+            </section>
+
+            <!-- SECCIÓN 2 -->
+            <section class=" 
+            d-flex 
+            flex-column
+            flex-lg-row 
+            my-5">
+
+                <div class="
+                container 
+                flex-lg-column 
+                flex-row 
+                order-lg-1 
+                order-2">
+
+                    <div class="
+                    d-flex 
+                    justify-content-center
+                    mb-4 
+                    row">
+
+                        <div class="
+                        col-lg-6 
+                        col-10">
+
+                            <label for="firstName" class="form-label">Primer Nombre<span
+                                    class="fs-4 text-danger">*</span></label>
+
+                            <input type="text" name="firstName" id="firstName" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="lastName" class="form-label">Apellido<span
+                                    class="text-danger fs-4">*</span></label>
+
+                            <input type="text" name="lastName" id="lastName" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="phone" class="form-label">Numero de Celular
+                                <span class="text-danger fs-4">*</span>
+                            </label>
+
+                            <input type="tel" name="phone" id="phone" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="birthday" class="form-label">Fecha de Cumpleaños<span
+                                    class="text-danger fs-4">*</span></label>
+
+                            <input type="text" name="birthday" id="birthday" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="gender" class="form-label">Género <span class="fs-4"></span></label>
+
+                            <input type="text" name="gender" id="gender" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="userTelegram" class="form-label">Nombre de usuario en
+                                Telegram <span class="fs-4"></span>
+                            </label>
+
+                            <input type="text" name="userTelegram" id="userTelegram" class="
+                                form-control 
+                                form-control-sm">
+
+                        </div>
+
+                    </div>
+
+                    <div class="
+                    d-flex 
+                    justify-content-center
+                    mb-4 
+                    row">
+
+                        <p class="
+                        m-0 
+                        text-center 
+                        text-lg-start">Su dirección</p>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="country" class="form-label">País <span class="text-danger fs-4">*</span></label>
+
+                            <input type="text" id="country" name="country" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="province" class="form-label">Provincia <span class="fs-4 text-danger">*</span>
+                            </label>
+
+                            <input type="text" name="province" id="province" class="form-control form-control-sm">
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="city" class="form-label">Ciudad <span class="fs-4 text-danger">*</span></label>
+
+                            <input type="text" name="city" id="city" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10 ">
+
+                            <label for="pc" class="form-label">Código postal <span class="fs-4"></span></label>
+
+                            <input type="text" name="pc" id="pc" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="col-lg-6 col-10">
+
+                            <label for="street" class="form-label">Calle <span class="fs-4 text-danger">*</span></label>
+
+                            <input type="text" name="street" id="street" class="form-control form-control-sm">
+
+                        </div>
+
+                        <div class="
+                        col-lg-6 
+                        col-10 
+                        d-flex 
+                        gap-1">
+
+                            <div class="col-6">
+
+                                <label for="height" class="form-label">Altura
+                                    <span class="text-danger fs-4">*</span>
+                                </label>
+
+                                <input type="text" name="height" id="height" class="form-control form-control-sm">
+
+                            </div>
+
+                            <div class="col-6">
+                                <label for="floor" class="form-label">Piso <span class="fs-4"></span></label>
+                                <input type="text" name="floor" id="floor" class="form-control form-control-sm">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="
+                d-flex 
+                justify-content-lg-end 
+                justify-content-center 
+                order-lg-2 
+                order-1
+                px-3 
+                py-5 
+                w-100">
+
+                    <div class="
+                    align-items-center 
+                    d-flex 
+                    flex-column 
+                    justify-content-center
+                    w-80">
+
+                        <h1 class="fs-1">KYC</h1>
+
+                        <p>DATOS PERSONALES</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SECCIÓN 3 -->
+            <section class=" 
+            border-2 
+            line-bt 
+            line-tp 
+            line-w-90 
+            mb-0
+            pb-4">
+
+                <h6 class="py-4 text-center">DATOS BANCARIOS (TIENEN QUE SER LOS MISMOS DATOS QUE EL USUARIO)</h6>
+
+                <div class="
+                align-items-center
+                align-items-lg-start 
+                d-flex 
+                flex-column 
+                gap-1">
+
+                    <div class="
+                    align-items-center 
+                    col-lg-6 
+                    col-10 
+                    d-flex 
+                    flex-column
+                    flex-lg-row">
+
+                        <label for="bank" class="
+                        col-lg-3 
+                        col-12 
+                        form-label 
+                        px-2
+                        text-lg-end 
+                        text-start">BANCO: </label>
+
+                        <input type="text" name="bank" id="bank" class="form-control form-control-sm ">
+
+                    </div>
+
+                    <div class="
+                    align-items-center 
+                    col-lg-6 
+                    col-10 
+                    d-flex 
+                    flex-column
+                    flex-lg-row">
+
+                        <label for="account" class="
+                        col-lg-3 
+                        col-12 
+                        form-label 
+                        px-2
+                        text-lg-end 
+                        text-start">CUENTA: </label>
+
+                        <input type="text" name="account" id="account" class="form-control form-control-sm ">
+
+                    </div>
+
+                    <div class="
+                    align-items-center 
+                    col-lg-6 
+                    col-10 
+                    d-flex 
+                    flex-column
+                    flex-lg-row">
+
+                        <label for="CBU" class="
+                        col-lg-3 
+                        col-12 
+                        form-label 
+                        px-2
+                        text-lg-end 
+                        text-start">CBU/CVU: </label>
+
+                        <input type="text" name="CBU" id="CBU" class="form-control form-control-sm ">
+
+                    </div>
+
+                    <div class="
+                    align-items-center 
+                    col-lg-6 
+                    col-10 
+                    d-flex 
+                    flex-column
+                    flex-lg-row">
+
+                        <label for="CUIT" class="
+                        col-lg-3 
+                        col-12 
+                        form-label 
+                        text-lg-end 
+                        text-start 
+                        px-2">CUIT: </label>
+
+                        <input type="text" name="CUIT" id="CUIT" class="form-control form-control-sm ">
+
+                    </div>
+
+                    <div class="
+                    align-items-center 
+                    col-lg-6 
+                    col-10 
+                    d-flex 
+                    flex-column
+                    flex-lg-row">
+
+                        <label for="alias" class="
+                        col-lg-3 
+                        col-12 
+                        form-label 
+                        text-lg-end 
+                        text-start 
+                        px-2">ALIAS: </label>
+
+                        <input type="text" name="alias" id="alias" class="form-control form-control-sm ">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SECCIÓN 4 -->
+            <section class="py-5">
+
+                <div class="
+                align-items-center
+                d-flex 
+                flex-column
+                flex-lg-row 
+                gap-1 
+                justify-content-around">
+                    <div class="
+                    col-lg-7 
+                    col-10 
+                    px-lg-5 
+                    px-0
+                    text-center">
+
+                        <h6>DATOS WALLET CRIPTO</h6>
+
+                        <input type="text" name="cripto"
+                            placeholder="La dirección de su billetera personal, 0x0000...00000"
+                            class="form-control form-control-sm placeholder-color">
+
+                    </div>
+
+                    <div class="
+                    col-lg-5 
+                    pe-lg-5 
+                    pe-0
+                    text-center 
+                    text-lg-end">
+                        <button type="button" class="
+                            border 
+                            border-dark 
+                            btn 
+                            btn-outline-dark 
+                            fs-lg-3 
+                            fw-bold">BSC<br>WALLET</button>
+
+                    </div>
+
+                </div>
+
+                <div class="
+                border-2 
+                line-bt 
+                line-tp 
+                line-w-90 
+                mt-5 
+                p-2 
+                text-center
+                text-lg-start">
+
+                    <p class="
+                    m-0 
+                    px-lg-5 
+                    px-0
+                    ">DOCUMENTOS ENVIADOS</p>
+
+                </div>
+
+            </section>
+
+            <!-- SECCIÓN 5 -->
+            <section class="
+            d-flex 
+            flex-column 
+            flex-lg-row 
+            pb-5
+            w-100">
+
+                <div class="
+                col-lg-3 
+                col-12
+                d-flex
+                flex-column
+                gap-2
+                justify-content-center
+                py-3
+                text-center
+                text-lg-start">
+
+                    <p class="lh-1 mb-lg-1 mb-2">TIPO DE INFORMACIÓN</p>
+
+                    <p class="lh-1 mb-lg-1 mb-2">TARJETA DE </br>IDENTIFICACIÓN </br>NACIONAL</p>
+
+                    <p class="lh-1 mb-lg-1 mb-2">TARJETA DE PASAPORTE</p>
+
+                    <p class="lh-1 mb-lg-1 mb-2">LICENCIA DE CONDUCIR</p>
+
+                </div>
+
+                <div style="--bs-bg-opacity: .1;" class="
+                    bg-warning
+                    border 
+                    border-warning 
+                    d-flex 
+                    justify-content-center 
+                    p-2
+                    rectangle-height 
+                    rounded 
+                    text-center 
+                    w-100">
+
+                    <div class="
+                    col-6
+                    d-flex 
+                    flex-column">
+
+                        <h5>FRENTE</h5>
+
+                        <div class="
+                        bg-white 
+                        border 
+                        border-warning
+                        h-100 
+                        me-lg-4 
+                        me-2
+                        rounded">
+
+                        </div>
+
+                    </div>
+
+                    <div class="
+                    col-6
+                    d-flex 
+                    flex-column">
+
+                        <h5>DORSO</h5>
+
+                        <div class="
+                        bg-white 
+                        border 
+                        border-warning 
+                        h-100 
+                        ms-lg-4 
+                        ms-2
+                        rounded">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SECCIÓN 6 -->
+            <section class="
+            align-items-center 
+            d-flex 
+            flex-column 
+            line-tp 
+            line-w-90
+            p-0 
+            pb-lg-5 
+            ps-lg-5 
+            pt-lg-2 
+            py-2">
+
+                <div>
+
+                    <p class="text-start">RECHAZO DE KYC</p>
+
+                    <p class="text-start">POR FAVOR DETALLE AQUÍ EL MOTIVO DEL RECHAZO, ES IMPORTANTE SER CLARO Y
+                        CORDIAL CON EL CLIENTE</p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <textarea style="--bs-bg-opacity: .1;" name="rejection-msg" rows="5" class="
+                        bg-warning
+                        border 
+                        border-warning 
+                        col-10
+                        rounded"></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SECCIÓN 7 -->
+            <section class="
+            col-lg-10
+            col-12
+            d-flex 
+            line-bt 
+            line-tp 
+            py-4">
+
+                <div class="
+                
+                col-12 
+                d-flex 
+                flex-wrap 
+                gap-1
+                justify-content-around">
+
+                    <button type="submit" class="btn btn-success py-3">APROBADO</button>
+
+                    <button type="button" class="btn btn-danger py-3">RECHAZADO</button>
+
+                </div>
+
+            </section>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

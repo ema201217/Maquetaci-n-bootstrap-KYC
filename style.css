@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none
+}
+
+*:focus{
+    outline:lightblue;
+}
+
+label,
+span {
+  font-size: 0.8rem;
+}
+
+.line-bt {
+  position: relative;
+}
+
+.line-bt::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dddddd7c;
+}
+
+.line-tp {
+  position: relative;
+}
+
+.line-tp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dddddd7c;
+}
+
+.line-w-90 {
+  width: 90%;
+}
+
+.padding-start-lg-6 {
+  padding-left: 6rem;
+}
+
+.placeholder-color::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.rectangle-height {
+  height: 220px;
+}
+
+textarea {
+  resize: none;
+}
+@media screen and (max-width: 991px) {
+  .line-w-90 {
+    width: 100%;
+  }
+
+  .padding-start-lg-6 {
+    padding-left: 0rem;
+  }
+
+  .section-5 .rectangle-height {
+    height: 150px;
+  }
+}
